@@ -15,13 +15,13 @@
 
 ## Code Style
 - TypeScript strict mode
-- Prettier for code formatting
+- Prettier for code formatting with default settings
 - pnpm for package management
 - Modern web features
 - No framework
 - Minimal dependencies
-- Vitest for unit tests
-- Playwright for E2E tests
+- Vitest for unit tests (logic tests only)
+- Playwright for E2E tests (to verify DOM interactions)
 
 ## Implementation Loop
 - Create a feature branch per epic.

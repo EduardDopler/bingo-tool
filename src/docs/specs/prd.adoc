@@ -11,14 +11,17 @@ This document specifies the requirements for a client-side Bingo Helper Tool. Th
 === Grid Structure & Input Parsing
 * The grid is a fixed 5x5 matrix containing only numbers.
 * The grid does not contain a "Free Space". All 25 cells hold numeric values.
-* Users populate the grid by pasting text from the clipboard.
-* *Parsing Logic*:
+* Users populate the grid by pasting text from the clipboard or via manual entry.
+* *Parsing Logic on pasting from clipboard*:
+** Pasting from the clipboard is only possible in edit mode.
 ** The parser processes text row-first (left-to-right, top-to-bottom).
 ** Any non-digit character (e.g., spaces, tabs, commas, newlines) acts as a separator.
+** No further input validation takes place. Negative numbers are silently converted to positive numbers.
 ** All single-digit numbers get a zero prepended. (e.g., 1 becomes 01, 9 becomes 09)
 ** If the pasted text contains fewer or more than 25 numbers:
 *** The tool fills the cells sequentially up to the available capacity.
-*** Remaining cells stay empty.
+*** Remaining cells stay empty. They can be manually filled later.
+*** Overflows are discarded.
 *** The tool displays a clear visual warning banner in the user interface.
 
 === Game Logic & States
@@ -42,6 +45,7 @@ This document specifies the requirements for a client-side Bingo Helper Tool. Th
 ** It reverts cell marking/unmarking actions in Play Mode.
 ** It reverts value changes made during an Edit Mode session. All edits made during a single Edit Mode session (from entry to exit) are treated as a single action and are reverted together.
 ** The undo stack is transient. Switching between boards or reloading the application clears the undo stack. Redo is not supported.
+** Other bot actions like create, rename, delete are excluded from undo.
 
 === Persistence & Navigation
 * *Local Storage*:
