@@ -107,7 +107,7 @@ The core visual narrative relies on **translucency** and **layering**. Surfaces 
 
 The palette is anchored by **Deep Forest Green (#1A2F23)**, which serves as the canvas for the entire interface. This is a dark-mode first system where the background color provides the necessary contrast for the glass effects to emerge.
 
-**Soft Gold (#FFBF00)** acts as the high-energy accent. In this design system, gold is not just a solid color but a source of light. When applied to highlighted cells or interactive states, it should be paired with an outer "glass glow"—a soft, diffused drop shadow that mimics a light source behind the pane. 
+**Soft Gold (#FFBF00)** acts as the high-energy accent. In this design system, gold is not just a solid color but a source of light. When applied to highlighted cells or interactive states, it should be paired with an outer "glass glow"—a soft, diffused drop shadow that mimics a light source behind the pane.
 
 White and off-whites are used exclusively for thin borders and typography to maintain the "etched glass" look.
 
@@ -119,13 +119,13 @@ To maintain the premium feel, display headings use tighter letter spacing and bo
 
 ## Layout & Spacing
 
-The layout philosophy follows a **fluid glass-grid**. Content is housed within large, sweeping containers that use a 12-column structure on desktop. 
+The layout philosophy follows a **fluid glass-grid**. Content is housed within large, sweeping containers that use a 12-column structure on desktop.
 
-A unique characteristic of this design system is the "Inset Margin." Elements do not sit flush against the edges of their glass containers; they maintain a consistent internal padding (base * 3) to allow the frosted border effects to remain visible. Grid lines should be rendered as ultra-thin (0.5px) strokes of light white (10% opacity), creating a technical, blueprint-like foundation beneath the floating glass cards.
+A unique characteristic of this design system is the "Inset Margin." Elements do not sit flush against the edges of their glass containers; they maintain a consistent internal padding (base \* 3) to allow the frosted border effects to remain visible. Grid lines should be rendered as ultra-thin (0.5px) strokes of light white (10% opacity), creating a technical, blueprint-like foundation beneath the floating glass cards.
 
 ## Elevation & Depth
 
-Depth is conveyed through **Backdrop Blur** and **Tonal Stacking** rather than traditional black shadows. 
+Depth is conveyed through **Backdrop Blur** and **Tonal Stacking** rather than traditional black shadows.
 
 1.  **Level 0 (Base):** Deep Forest Green solid background.
 2.  **Level 1 (Cards/Panels):** Semi-transparent white fill (4-8%), backdrop-filter blur (20px-40px), and a 1px solid white border at 12% opacity.
@@ -134,26 +134,32 @@ Depth is conveyed through **Backdrop Blur** and **Tonal Stacking** rather than t
 
 ## Shapes
 
-The shape language is a study in contrast. **Large global containers** (main dashboards, page wrappers) use a significant corner radius (1.5rem / 24px) to feel soft and inviting. 
+The shape language is a study in contrast. **Large global containers** (main dashboards, page wrappers) use a significant corner radius (1.5rem / 24px) to feel soft and inviting.
 
 **Internal components** (buttons, input fields, grid cells) use a more disciplined, subtle radius (0.5rem / 8px). This creates a nested hierarchy where the outer "glass shell" feels like an organic object, while the functional elements inside feel precise and technical.
 
 ## Components
 
 ### Buttons
+
 Primary buttons use the Soft Gold palette with a slight linear gradient. The text is dark green (#1A2F23) for maximum contrast. Secondary buttons are "Ghost Glass"—no fill, just the 1px white border with a blur effect that intensifies on hover.
 
 ### Cards & Grid Cells
+
 Cells are the primary data container. By default, they have a subtle 4% white fill. When "Highlighted," they transition to a 10% Gold fill with a 20px blur and a 20% opacity gold border.
 
 ### Input Fields
+
 Inputs are minimal: a bottom-border-only approach or a very faint glass-well (recessed appearance). The focus state triggers a soft gold "neon" underline.
 
 ### Chips/Tags
+
 Small, pill-shaped elements with high-blur backgrounds. They act as "micro-glass" fragments. Use labels in uppercase for a professional, metadata-heavy appearance.
 
 ### Glass Dividers
+
 Never use solid lines. Use 1px gradients that fade from 15% white to 0% white at the ends to separate content sections without "breaking" the glass pane.
 
 ## Mockup screenshots
+
 See mockup screenshots in `src/docs/design/mockup/`.
