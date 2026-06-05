@@ -1,0 +1,78 @@
+= Product Requirements Document: Bingo Helper Tool
+:toc: left
+:toclevels: 3
+:sectnums:
+
+== Introduction & Goal
+This document specifies the requirements for a client-side Bingo Helper Tool. The tool assists users in tracking numbers drawn during a Bingo game on a 5x5 grid. The tool does not draw numbers itself; it is designed solely to track marked numbers, highlight winning lines, and manage multiple boards.
+
+== Core Features & Functional Requirements
+
+=== Grid Structure & Input Parsing
+* The grid is a fixed 5x5 matrix containing only numbers.
+* The grid does not contain a "Free Space". All 25 cells hold numeric values.
+* Users populate the grid by pasting text from the clipboard.
+* *Parsing Logic*:
+** The parser processes text row-first (left-to-right, top-to-bottom).
+** Any non-digit character (e.g., spaces, tabs, commas, newlines) acts as a separator.
+** All single-digit numbers get a zero prepended. (e.g., 1 becomes 01, 9 becomes 09)
+** If the pasted text contains fewer or more than 25 numbers:
+*** The tool fills the cells sequentially up to the available capacity.
+*** Remaining cells stay empty.
+*** The tool displays a clear visual warning banner in the user interface.
+
+=== Game Logic & States
+* The application operates in two distinct modes: Play Mode and Edit Mode.
+
+==== Play Mode
+* This is the default mode of the application.
+* Clicking or tapping a cell toggles its marked state.
+* If a horizontal, vertical, or diagonal line of 5 cells is fully marked, the tool highlights the line using custom CSS styles.
+
+==== Edit Mode
+* Users enter Edit Mode to modify or enter numbers in cells manually.
+* Modifying a cell's number preserves its marked state.
+* *Bingo Evaluation*:
+** Entering Edit Mode clears all active Bingo line highlights.
+** Exiting Edit Mode triggers a re-evaluation of the Bingo lines based on the updated cell numbers and current marked states.
+
+==== Undo Functionality
+* The tool provides an Undo button to revert user actions.
+* *Scope of Undo*:
+** It reverts cell marking/unmarking actions in Play Mode.
+** It reverts value changes made during an Edit Mode session. All edits made during a single Edit Mode session (from entry to exit) are treated as a single action and are reverted together.
+** The undo stack is transient. Switching between boards or reloading the application clears the undo stack. Redo is not supported.
+
+=== Persistence & Navigation
+* *Local Storage*:
+** The tool saves all state changes automatically in `localStorage`.
+** No internet connection or backend server is required.
+** On launch, the tool loads the last active board.
+
+==== Board Lifecycle
+* *Creating a Board*:
+** Clicking the "New" button saves the current board to history and opens a blank board.
+** The default board name is the current date in `YYYY-MM-DD` format.
+** If a board with that date already exists, the tool appends a sequential number in parentheses (e.g., `YYYY-MM-DD (2)`).
+* *Discarding Untouched Boards*:
+** If a new board remains unmodified (completely empty) and the user switches to another board or reloads the page, the tool discards the empty board to avoid cluttering the history.
+
+==== History & Management
+* A history panel or menu allows users to:
+** Switch between saved boards.
+** Rename boards.
+** Delete boards from the history.
+
+== Non-Functional Requirements
+
+=== Technology Stack
+* *Language*: TypeScript in strict mode.
+* *Framework*: Vanilla HTML, CSS, and TypeScript (no frontend frameworks).
+* *Dependencies*: Minimal external dependencies.
+* *Package Manager*: `pnpm`.
+* *Testing*: Vitest for unit tests, Playwright for end-to-end (E2E) tests.
+* *Styling*: Custom CSS. No Tailwind CSS. Modern, responsive design featuring glassmorphism, smooth animations, and a polished dark mode.
+
+=== Performance & Compatibility
+* The application must load and perform operations instantly on modern desktop and mobile browsers.
+* The layout must be fully responsive, scaling correctly to both mobile touch devices and desktop screens.
