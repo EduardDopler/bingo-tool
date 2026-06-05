@@ -34,5 +34,5 @@
 - Update relevant documentation if needed.
 - Implement it using TDD (choose London or Chicago School as appropriate).
 - Commit when done.
-- Update the ticket status.
+- Update the ticket status in the user story file and if necessary in the epic file.
 - Create merge request when ready for review.
