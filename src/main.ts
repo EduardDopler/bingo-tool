@@ -599,3 +599,14 @@ document.addEventListener('DOMContentLoaded', () => {
   loadFromLocalStorage();
   render();
 });
+
+// --- PWA ---
+
+if ('serviceWorker' in navigator && import.meta.env.PROD) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker
+      .register(`${import.meta.env.BASE_URL}sw.js`)
+      .then((reg) => console.log('ServiceWorker registered with scope:', reg.scope))
+      .catch((err) => console.error('ServiceWorker registration failed:', err));
+  });
+}

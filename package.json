@@ -1,13 +1,13 @@
 {
   "name": "bingo-tool",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "format": "prettier --write \"**/*.{ts,css,html,md}\"",
+    "format": "prettier --write \"**/*.{ts,js,css,html,md,webmanifest}\"",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:e2e": "playwright test"
