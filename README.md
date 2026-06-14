@@ -6,6 +6,10 @@ Welcome to the **Bingo Helper Tool**—a sleek, dark-mode, client-side digital c
 
 ---
 
+## 🚀 See it in action
+
+🔗 https://EduardDopler.github.io/bingo-tool/
+
 ## ✨ Features
 
 - **⚡ Clipboard Magic** – Paste raw text directly in Edit Mode. Commas, spaces, tabs? The smart parser gobbles it up, formats single digits (hello `09`), and drops them into a 5x5 grid.
@@ -15,9 +19,7 @@ Welcome to the **Bingo Helper Tool**—a sleek, dark-mode, client-side digital c
 
 ---
 
-## 🚀 Start
-
-Get it running locally in a flash:
+## 💻 Run locally
 
 ```bash
 # 1. Install dependencies
