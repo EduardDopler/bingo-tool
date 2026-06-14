@@ -1,6 +1,6 @@
 ---
 id: US007
-title: 'Local Storage Sync'
+title: "Local Storage Sync"
 status: done
 epic_id: E003
 created: 2026-06-05 13:15

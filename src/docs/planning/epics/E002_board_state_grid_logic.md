@@ -1,6 +1,6 @@
 ---
 id: E002
-title: 'Board State and Grid Logic'
+title: "Board State and Grid Logic"
 status: new
 user_story_ids:
   - US003

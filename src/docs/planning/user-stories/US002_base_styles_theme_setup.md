@@ -1,6 +1,6 @@
 ---
 id: US002
-title: 'Base Styles & Theme Setup'
+title: "Base Styles & Theme Setup"
 status: new
 epic_id: E001
 created: 2026-06-05 13:15

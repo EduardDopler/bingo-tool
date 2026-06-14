@@ -1,6 +1,6 @@
 ---
 id: US005
-title: 'Cell Marking & Bingo Highlights'
+title: "Cell Marking & Bingo Highlights"
 status: done
 epic_id: E002
 created: 2026-06-05 13:15

@@ -17,7 +17,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "format": "prettier --write \"**/*.{ts,js,css,html,md,webmanifest}\"",
+    "format": "prettier --write \"**/*.{ts,js,css,html,md,json,webmanifest}\"",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:e2e": "playwright test"

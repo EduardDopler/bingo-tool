@@ -16,16 +16,16 @@ export function parseBingoInput(text: string): ParseResult {
   const count = matches.length;
   const hasWarning = count !== 25;
 
-  const parsed = Array(25).fill('');
+  const parsed = Array(25).fill("");
   const limit = Math.min(count, 25);
   for (let i = 0; i < limit; i++) {
     const val = matches[i];
-    parsed[i] = val.length === 1 ? '0' + val : val;
+    parsed[i] = val.length === 1 ? "0" + val : val;
   }
 
   return {
     parsed,
     hasWarning,
-    count
+    count,
   };
 }

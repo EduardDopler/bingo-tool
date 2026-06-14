@@ -1,6 +1,6 @@
 ---
 id: US001
-title: 'Project Boilerplate Setup'
+title: "Project Boilerplate Setup"
 status: in-progress
 epic_id: E001
 created: 2026-06-05 13:15

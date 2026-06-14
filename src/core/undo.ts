@@ -1,4 +1,4 @@
-import { Board } from './board';
+import { Board } from "./board";
 
 export interface BoardSnapshot {
   values: string[];
@@ -17,7 +17,7 @@ export class UndoManager {
   public push(board: Board): void {
     this.stack.push({
       values: [...board.values],
-      marked: [...board.marked]
+      marked: [...board.marked],
     });
   }
 

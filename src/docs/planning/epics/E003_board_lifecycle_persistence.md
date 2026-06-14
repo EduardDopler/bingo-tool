@@ -1,6 +1,6 @@
 ---
 id: E003
-title: 'Board Lifecycle & Persistence'
+title: "Board Lifecycle & Persistence"
 status: new
 user_story_ids:
   - US007

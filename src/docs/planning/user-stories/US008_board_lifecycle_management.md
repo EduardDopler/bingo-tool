@@ -1,6 +1,6 @@
 ---
 id: US008
-title: 'Board Lifecycle Management'
+title: "Board Lifecycle Management"
 status: done
 epic_id: E003
 created: 2026-06-05 13:15

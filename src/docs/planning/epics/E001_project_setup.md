@@ -1,6 +1,6 @@
 ---
 id: E001
-title: 'Project Infrastructure Setup'
+title: "Project Infrastructure Setup"
 status: new
 user_story_ids:
   - US001

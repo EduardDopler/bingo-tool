@@ -1,86 +1,86 @@
 ---
 name: Verdant Glass
 colors:
-  surface: '#06170d'
-  surface-dim: '#06170d'
-  surface-bright: '#2c3d32'
-  surface-container-lowest: '#031109'
-  surface-container-low: '#0e1f15'
-  surface-container: '#132319'
-  surface-container-high: '#1d2e23'
-  surface-container-highest: '#28382e'
-  on-surface: '#d4e7d8'
-  on-surface-variant: '#c2c8c2'
-  inverse-surface: '#d4e7d8'
-  inverse-on-surface: '#233429'
-  outline: '#8c928c'
-  outline-variant: '#424843'
-  surface-tint: '#b4ccbb'
-  primary: '#b4ccbb'
-  on-primary: '#203529'
-  primary-container: '#1a2f23'
-  on-primary-container: '#809787'
-  inverse-primary: '#4d6355'
-  secondary: '#ffe2ab'
-  on-secondary: '#402d00'
-  secondary-container: '#ffbf00'
-  on-secondary-container: '#6d5000'
-  tertiary: '#c6c6c7'
-  on-tertiary: '#2f3131'
-  tertiary-container: '#292b2b'
-  on-tertiary-container: '#919292'
-  error: '#ffb4ab'
-  on-error: '#690005'
-  error-container: '#93000a'
-  on-error-container: '#ffdad6'
-  primary-fixed: '#d0e9d6'
-  primary-fixed-dim: '#b4ccbb'
-  on-primary-fixed: '#0a2014'
-  on-primary-fixed-variant: '#364c3e'
-  secondary-fixed: '#ffdfa0'
-  secondary-fixed-dim: '#fbbc00'
-  on-secondary-fixed: '#261a00'
-  on-secondary-fixed-variant: '#5c4300'
-  tertiary-fixed: '#e2e2e2'
-  tertiary-fixed-dim: '#c6c6c7'
-  on-tertiary-fixed: '#1a1c1c'
-  on-tertiary-fixed-variant: '#454747'
-  background: '#06170d'
-  on-background: '#d4e7d8'
-  surface-variant: '#28382e'
+  surface: "#06170d"
+  surface-dim: "#06170d"
+  surface-bright: "#2c3d32"
+  surface-container-lowest: "#031109"
+  surface-container-low: "#0e1f15"
+  surface-container: "#132319"
+  surface-container-high: "#1d2e23"
+  surface-container-highest: "#28382e"
+  on-surface: "#d4e7d8"
+  on-surface-variant: "#c2c8c2"
+  inverse-surface: "#d4e7d8"
+  inverse-on-surface: "#233429"
+  outline: "#8c928c"
+  outline-variant: "#424843"
+  surface-tint: "#b4ccbb"
+  primary: "#b4ccbb"
+  on-primary: "#203529"
+  primary-container: "#1a2f23"
+  on-primary-container: "#809787"
+  inverse-primary: "#4d6355"
+  secondary: "#ffe2ab"
+  on-secondary: "#402d00"
+  secondary-container: "#ffbf00"
+  on-secondary-container: "#6d5000"
+  tertiary: "#c6c6c7"
+  on-tertiary: "#2f3131"
+  tertiary-container: "#292b2b"
+  on-tertiary-container: "#919292"
+  error: "#ffb4ab"
+  on-error: "#690005"
+  error-container: "#93000a"
+  on-error-container: "#ffdad6"
+  primary-fixed: "#d0e9d6"
+  primary-fixed-dim: "#b4ccbb"
+  on-primary-fixed: "#0a2014"
+  on-primary-fixed-variant: "#364c3e"
+  secondary-fixed: "#ffdfa0"
+  secondary-fixed-dim: "#fbbc00"
+  on-secondary-fixed: "#261a00"
+  on-secondary-fixed-variant: "#5c4300"
+  tertiary-fixed: "#e2e2e2"
+  tertiary-fixed-dim: "#c6c6c7"
+  on-tertiary-fixed: "#1a1c1c"
+  on-tertiary-fixed-variant: "#454747"
+  background: "#06170d"
+  on-background: "#d4e7d8"
+  surface-variant: "#28382e"
 typography:
   display-lg:
     fontFamily: Plus Jakarta Sans
     fontSize: 48px
-    fontWeight: '700'
+    fontWeight: "700"
     lineHeight: 56px
     letterSpacing: -0.02em
   display-lg-mobile:
     fontFamily: Plus Jakarta Sans
     fontSize: 32px
-    fontWeight: '700'
+    fontWeight: "700"
     lineHeight: 40px
     letterSpacing: -0.02em
   headline-md:
     fontFamily: Plus Jakarta Sans
     fontSize: 24px
-    fontWeight: '600'
+    fontWeight: "600"
     lineHeight: 32px
     letterSpacing: -0.01em
   body-lg:
     fontFamily: Plus Jakarta Sans
     fontSize: 18px
-    fontWeight: '400'
+    fontWeight: "400"
     lineHeight: 28px
   body-md:
     fontFamily: Plus Jakarta Sans
     fontSize: 16px
-    fontWeight: '400'
+    fontWeight: "400"
     lineHeight: 24px
   label-sm:
     fontFamily: Plus Jakarta Sans
     fontSize: 13px
-    fontWeight: '600'
+    fontWeight: "600"
     lineHeight: 16px
     letterSpacing: 0.05em
 rounded:

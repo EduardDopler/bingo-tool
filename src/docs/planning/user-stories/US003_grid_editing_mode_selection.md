@@ -1,6 +1,6 @@
 ---
 id: US003
-title: 'Grid Editing and Mode Selection'
+title: "Grid Editing and Mode Selection"
 status: done
 epic_id: E002
 created: 2026-06-05 13:15

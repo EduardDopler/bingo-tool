@@ -1,6 +1,6 @@
 ---
 id: US004
-title: 'Pasted Text Parser & Warning Banner'
+title: "Pasted Text Parser & Warning Banner"
 status: done
 epic_id: E002
 created: 2026-06-05 13:15

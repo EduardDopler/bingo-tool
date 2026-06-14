@@ -20,7 +20,7 @@ export class Board {
     [4, 9, 14, 19, 24],
     // Diagonals
     [0, 6, 12, 18, 24],
-    [4, 8, 12, 16, 20]
+    [4, 8, 12, 16, 20],
   ];
 
   constructor(
@@ -28,11 +28,11 @@ export class Board {
     name: string,
     values?: string[],
     marked?: boolean[],
-    isEditMode: boolean = false
+    isEditMode: boolean = false,
   ) {
     this.id = id;
     this.name = name;
-    this.values = values ? [...values] : Array(25).fill('');
+    this.values = values ? [...values] : Array(25).fill("");
     this.marked = marked ? [...marked] : Array(25).fill(false);
     this.isEditMode = isEditMode;
   }
@@ -69,6 +69,12 @@ export class Board {
   }
 
   public clone(): Board {
-    return new Board(this.id, this.name, [...this.values], [...this.marked], this.isEditMode);
+    return new Board(
+      this.id,
+      this.name,
+      [...this.values],
+      [...this.marked],
+      this.isEditMode,
+    );
   }
 }

@@ -1,6 +1,6 @@
 ---
 id: US009
-title: 'History Menu & Renaming'
+title: "History Menu & Renaming"
 status: done
 epic_id: E003
 created: 2026-06-05 13:15
