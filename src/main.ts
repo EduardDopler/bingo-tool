@@ -617,7 +617,9 @@ document.addEventListener("DOMContentLoaded", () => {
 if ("serviceWorker" in navigator && import.meta.env.PROD) {
   window.addEventListener("load", () => {
     navigator.serviceWorker
-      .register(`${import.meta.env.BASE_URL}sw.js`)
+      .register(`${import.meta.env.BASE_URL}sw.js`, {
+        scope: `${import.meta.env.BASE_URL}`,
+      })
       .then((reg) =>
         console.log("ServiceWorker registered with scope:", reg.scope),
       )

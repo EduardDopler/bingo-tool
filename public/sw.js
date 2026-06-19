@@ -1,10 +1,12 @@
-const CACHE_NAME = "bingo-tool-v1";
+const CACHE_NAME = "bingo-tool-v2";
 const ASSETS_TO_CACHE = [
   "./",
   "./index.html",
   "./favicon.ico",
   "./favicon.svg",
   "./apple-touch-icon.png",
+  "./logo-192.png",
+  "./logo-512.png",
   "./manifest.webmanifest",
 ];
 
@@ -46,6 +48,7 @@ self.addEventListener("fetch", (event) => {
   if (
     event.request.mode === "navigate" ||
     url.pathname === "/" ||
+    url.pathname === "/bingo-tool/" ||
     url.pathname.endsWith("/index.html")
   ) {
     event.respondWith(

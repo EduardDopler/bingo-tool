@@ -3,6 +3,7 @@
   "short_name": "Bingo Tool",
   "description": "A premium client-side Bingo Helper Tool with grid tracking, line highlights, undo history, and multi-board persistence.",
   "start_url": "./",
+  "id": "/bingo-tool/",
   "display": "standalone",
   "background_color": "#06170d",
   "theme_color": "#06170d",
@@ -22,7 +23,21 @@
       "src": "icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshot-narrow.png",
+      "sizes": "384x838",
+      "type": "image/png",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "screenshot-wide.png",
+      "sizes": "1262x1138",
+      "type": "image/png",
+      "form_factor": "wide"
     }
   ]
 }
