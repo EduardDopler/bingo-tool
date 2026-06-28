@@ -1,12 +1,12 @@
-const CACHE_NAME = "bingo-tool-v2";
+const CACHE_NAME = "bingo-tool-v3";
 const ASSETS_TO_CACHE = [
   "./",
   "./index.html",
   "./favicon.ico",
   "./favicon.svg",
   "./apple-touch-icon.png",
-  "./logo-192.png",
-  "./logo-512.png",
+  "./icon-192.png",
+  "./icon-512.png",
   "./manifest.webmanifest",
 ];
 
